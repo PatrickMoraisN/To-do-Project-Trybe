@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#img {
+  position: absolute;
+  z-index: -99;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(17, 17, 17, 0.5);
+  border: .1px solid white;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tarefas {
+  color: white;
+}
+
+.selected {
+  background-color: rgb(216, 216, 216);
+  color: rgb(37, 37, 37);
+}
+
+.completed {
+  text-decoration: 4px line-through solid rgb(0, 0, 0);
+}
+
+#funcionamento {
+  text-decoration: underline white;
+}
+
+.buttons , .text{
+  margin-top: 80px;
+}
+
+.tarefas {
+  margin-top: 40px;
+  background-color: rgba(155, 155, 155, 0.308);
+  padding-right: 150px;
+  border-radius: 20px;
+}
+
+#texto-tarefa {
+  background-color: rgb(56, 56, 56);
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}
+
+#criar-tarefa {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 8px;
+  border: .5px solid rgb(5, 190, 5);
+  background: linear-gradient(rgb(7, 150, 7), rgb(28, 99, 1));
+  cursor: pointer;
+}
+
+#criar-tarefa:hover {
+  box-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+.btns {
+  border: 0;
+ border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+#apaga-tudo {
+  background: linear-gradient(rgb(252, 40, 40), rgb(94, 7, 7));
+}
+
+#apaga-tudo:hover {
+box-shadow: 0 0 4px red;
+}
+
+#remover-finalizados {
+  background: linear-gradient(rgb(252, 135, 40), rgb(94, 39, 7));
+}
+
+#remover-finalizados:hover {
+box-shadow: 0 0 4px orange;
+}
+
+#salvar-tarefas {
+  background: linear-gradient(rgb(40, 72, 252), rgb(12, 33, 129));
+}
+
+#salvar-tarefas:hover {
+  box-shadow: 0 0 4px blue;
+}
+
+#mover-cima , #mover-baixo {
+  background: linear-gradient(rgb(172, 172, 172), rgb(85, 85, 85));
+}
+
+#mover-cima:hover , #mover-baixo:hover {
+  box-shadow: 0 0 4px rgb(179, 179, 179);
+}
+
+#remover-selecionado {
+  background: linear-gradient(rgb(252, 231, 40), rgb(134, 126, 10));
+}
+
+#remover-selecionado:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 0, 0.788);
+}
+
+#write {
+  color: white;
+  margin-right: 10px;
+}

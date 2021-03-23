@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>To do list project</title>
+</head>
+
+<body>
+  <div class="img">
+    <img src="./background.jpg" alt="" srcset="" id="img">
+  <header>
+    <h1> Minha Lista de Tarefas</h1>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+  </header>
+
+  <div class="container">
+    <div class="text">
+      <i class="fas fa-pen" id="write"></i>
+      <input type="text" id="texto-tarefa" placeholder="Escreva uma tarefa..">
+      <button id="criar-tarefa">Add</button>
+    </div>
+
+    <div class="tarefas">
+      <ul id="lista-tarefas">
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <button id="mover-cima" class="btns fas fa-arrow-up"></button>
+      <button id="mover-baixo" class="btns fas fa-arrow-down"></button>
+      <button id="remover-selecionado" class="btns">Remover selecionado</button>
+      <button id="salvar-tarefas" class="btns">Salvar tarefas</button>
+      <button id="remover-finalizados" class="btns">Apagar finalizados</button>
+      <button id="apaga-tudo" class="btns">Apaga tudo</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</div>
+</body>
+
+</html>
